@@ -1,0 +1,115 @@
+/* in this .css file, it contains the custom properties for the nav bar */
+
+nav {
+    /* inside <nav>, i set display to flex and direction to row, so that the contents will be horizontal */
+    display: flex;
+    flex-direction: row;
+    /* i also set it to the center so that the contents are evenly distributed across the screen */
+    justify-content: center;
+    /* i set a height of 75px so that it isnt too thick and set the width as 100% so it takes up the whole length of the screen */
+    height: 75px;
+    width: 100%;
+    /* and for more style, i added a background color */
+    background-color: #BDB18C;
+}
+
+ul {
+    /* for <ul> (which is the main nav bar), i hid the overflow so no scrolling will be happening and list-style-type to none */
+    overflow: hidden;
+    list-style-type: none;
+    /* i once again set the display to flex and the direction to row, so it can have a horizontal layout */
+    display: flex;
+    flex-direction: row;
+    /* justify-content to center for centered content */
+    justify-content: center;
+    /* and padding to 0 for spacing purposes */
+    padding: 0px;
+    /* i set it as the same height and width of nav */
+    height: 75px;
+    width: 100%;
+}
+
+li {
+    /* for <li> i set margin to auto and width to fit-content for alignment */
+    margin: auto;
+    width: fit-content;
+}
+
+li a {
+    /* for anchor <a> tags inside <li>, i set display to inline-block so each tag will go under one another */
+    display: inline-block;
+    /* to avoid the default properties from messing up my customization, i used text-decoration and set it to none */
+    text-decoration: none;
+    /* i also aligned the text to the center for aesthetic */
+    text-align: center;
+    /* i included a padding of 5px so that the menu doesn't look too crowded and smushed */
+    padding: 5px;
+    /* here, i added a transition for a cool little animation */
+    transition: .2s ease;
+    position: relative;
+    color: #F0E1B1;
+}
+
+a.cuisines:hover {
+    /* this is a change of color when hovering over individual cuisines in the nav bar */
+    color: #F0E1B1;
+}
+
+/*
+    essentially, the main purpose of the properties in this block is to perform what happens after the hover animation
+    (the animation will not work without this)
+*/
+a.cuisines:after {
+    /* content allows the content of this element to be an empty string  */
+    content:'';
+    /* width and height define the size of the underline */
+    width: 100%;
+    height: 3px;
+    /* and these two gives color to the underline and gives roundess to it */
+    background-color: #F0E1B1;
+    border-radius: 10px;
+    /* and these finish the transition in a seamless manner */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: scaleX(0);
+    transition: .2s ease-in-out;
+}
+
+a.cuisines:hover::after {
+    /* this defines the size of the underline when hovered over */
+    transform: scaleX(1);
+}
+
+li.dropdown {
+    /* for making the content of said .class appear */
+    display: inline-block;
+}
+
+.content{
+    /* initially, i need .content to be hidden, so i added display and set it to none */
+    display: none;
+    /* and these two are simply for positioning the <div> */
+    position: absolute;
+    z-index: 1000;
+}
+
+.content a{
+    /* all anchor <a> tags inside .content will be displayed as a block, with text decoration removed, and text aligned in the center */
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+    background-color: #736C56;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content a:hover{
+    /* when hovering over the content of the dropdown, the background color changes with the use of the property below*/
+    background-color: #9FBDB5;
+}
+
+.dropdown:hover .content{
+    /* when hovering over the main item, the dropdown menu will appear */
+    display: block;
+}

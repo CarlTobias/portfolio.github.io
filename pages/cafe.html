@@ -1,0 +1,728 @@
+<!--
+    duplicate text:
+    the contents of this .html file along with the rest, has the exact same elements and properties as the american.html file...
+    the only differences between the documents are the images and information about each product
+
+    note: there will still be some explanation below, but not as in-depth as the first two .html files (index.html and american.html)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- the <head> tag has information that the user may not see but is fucntional for the .html file -->
+    <head>
+        <!-- these are the <meta> tags that contain data not seen by the user -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- these two are visible to the user, it can be seen as the name and icon of the tab -->
+        <title>MunchNinja</title>
+        <link rel="icon" href="../images/munchninja.svg">
+
+        <!-- these are <link> tags that give the file a bridge to connect to individual stylesheets that help in customizing the .html file -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <link rel="stylesheet" href="../css/navigation.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
+        <link rel="stylesheet" href="../css/media.css">
+    </head>
+
+    <!-- the <body> tag holds items the user can interact with -->
+    <body>
+        <!-- the <header> tag contain items that can be found in the topmost section of a page -->
+        <header>
+            <!-- these items include the background image, header and subheader texts; -->
+            <div class="img">
+                <img src="../images/food.png" class="headerimg">
+                <div class="title">
+                    <a class="home" href="/index.html"><h1>MunchNinja</h1></a>
+                    <h2>Unleash your taste buds</h2>
+                </div>
+            </div>
+
+            <!--
+                ...and a nav bar using a <nav> tag
+                the <nav> tag has the elements for a nav bar that includes a dropdown
+            -->
+            <nav class="nav">
+                <!--
+                    the nav bar is separated into two sections;
+                        - the main menu
+                        - the dropdown menu
+                    
+                    the main nav menu is seen instantly and the dropdown menu is seen when the user hovers over the item from the main menu with their mouse
+                -->
+                <ul>
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/american.html">American</a>
+
+                        <div class="content">
+                            <a href="../pages/american.html#mcdo">McDonald's</a>
+                            <a href="../pages/american.html#wendys">Wendy's</a>
+                            <a href="../pages/american.html#shakeshack">Shake Shack</a>
+                            <a href="../pages/american.html#buffalowildwings">Buffalo Wild Wings</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/chinese.html">Chinese</a>
+
+                        <div class="content">
+                            <a href="../pages/chinese.html#chinabistro">China Bistro</a>
+                            <a href="../pages/chinese.html#chinchin">Chin Chin</a>
+                            <a href="../pages/chinese.html#mandarinoak">Mandarin Oak</a>
+                            <a href="../pages/chinese.html#pandaexpress">Panda Express</a>
+                            <a href="../pages/chinese.html#yinyang">Yin & Yang</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/italian.html">Italian</a>
+
+                        <div class="content">
+                            <a href="../pages/italian.html#ilforno">Il Forno</a>
+                            <a href="../pages/italian.html#eataly">Eataly</a>
+                            <a href="../pages/italian.html#oregano">Oregano</a>
+                            <a href="../pages/italian.html#mamaitalia">Parka</a>
+                            <a href="../pages/italian.html#littleitaly">Little Italy</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/mexican.html">Mexican</a>
+
+                        <div class="content">
+                            <a href="../pages/mexican.html#mariabonita">Maria Bonita</a>
+                            <a href="../pages/mexican.html#tacoeataco">Taco Eataco</a>
+                            <a href="../pages/mexican.html#oneeatery">One Eatery</a>
+                            <a href="../pages/mexican.html#vamostacos">Vamos Tacos</a>
+                            <a href="../pages/mexican.html#vmk">Vigilante Mexican Kitchen</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/cafe.html">Cafe</a>
+                        
+                        <div class="content">
+                            <a href="../pages/cafe.html#starbucks">Starbucks</a>
+                            <a href="../pages/cafe.html#timhortons">Tim Horton's</a>
+                            <a href="../pages/cafe.html#caffenero">Caffe Nero</a>
+                            <a href="../pages/cafe.html#cariboucoffee">Caribou Coffee</a>
+                            <a href="../pages/cafe.html#parka">Parka</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/desserts.html">Desserts</a>
+                        
+                        <div class="content">
+                            <a href="../pages/desserts.html#baskinrobbins">Baskin Robbins</a>
+                            <a href="../pages/desserts.html#coldstone">Coldstone</a>
+                            <a href="../pages/desserts.html#dunkindonuts">Dunkin' Donuts</a>
+                            <a href="../pages/desserts.html#krispykreme">Krispy Kreme</a>
+                            <a href="../pages/desserts.html#cheesecakefactory">Cheesecake Factory</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- the <main> tag is the most important section because it has all the essential information -->
+        <main class="maincolumns">
+            <!--
+                inside, there are <div> tags that:
+                    - contain the menus for different restaurants (.picks);
+                    - enable a section to be scrollable (.itemscroll);
+                    - align those scrollable items horizontally (.rows);
+                    - contain all the information of each food item (.itembox);
+            -->
+            <div class="picks" id="starbucks">
+                <h3>Starbucks</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/sbcaffeamericano.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cafe Americano</p>
+                                    <p class="description" class="description">Hot Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 18.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbcappuccino.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cappuccino</p>
+                                    <p class="description">Hot Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbhotblondevanillalatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Blonde Vanilla Latte</p>
+                                    <p class="description">Hot Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbhotcaramelmacchiato.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Caramel Macchiato</p>
+                                    <p class="description">Hot Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbhotwhitechocolatemocha.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">White Chocolate Mocha</p>
+                                    <p class="description">Hot Coffee Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbcoldbrewcoffee.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cold Brew Coffee</p>
+                                    <p class="description">Iced Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbwhitechocolatemocha.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">White Chocolate Mocha</p>
+                                    <p class="description">Iced Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 24.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbblondevanillalatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">French Vanilla Latte</p>
+                                    <p class="description">Iced Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbcaffemocha.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cafe Mocha</p>
+                                    <p class="description">Iced Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sbcaramelmacchiato.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Caramel Macchiato</p>
+                                    <p class="description">Iced Coffee · Starbucks</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="timhortons">
+                <h3>Tim Horton's</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/originalblend.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Original Blend</p>
+                                    <p class="description" class="description">Hot Coffee · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 12.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/doubledouble.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Double Double</p>
+                                    <p class="description">Hot Coffee · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 12.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/tamericano.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Americano</p>
+                                    <p class="description">Hot Coffee · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 14.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/frenchvanilla.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">French Vanilla</p>
+                                    <p class="description">Hot Coffee · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 18.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/hotchocolate.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Hot Chocolate</p>
+                                    <p class="description">Hot Beverage· Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 13.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/frozenchocolate.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Frozen Chocolate</p>
+                                    <p class="description">Iced Beverage · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/icedmatchalatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Iced Matcha Latte</p>
+                                    <p class="description">Iced Coffee · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 24.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/icedfrenchvanillalatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">French Vanilla Latte</p>
+                                    <p class="description">Iced Coffee · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 21.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cookiesandcreamshaker.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cookies & Cream Shaker</p>
+                                    <p class="description">Iced Beverage · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 21.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/vanilladreamcoldbrew.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vanilla Dream</p>
+                                    <p class="description">Iced Coffee · Tim Horton's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 21.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="cariboucoffee">
+                <h3>Caribou Coffee</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/cherrypeachespressotonic.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cherry Peach Espresso</p>
+                                    <p class="description" class="description">Tonic Coffee · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 32.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/classicespressotonic.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Classic Espresso</p>
+                                    <p class="description">Tonic Coffee · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 30.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/frozenmatchateawithbubbles.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Frozen Matcha Tea</p>
+                                    <p class="description">Iced Tea · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 26.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/raspberrygreenteawithbubbles.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Raspberry Green Tea</p>
+                                    <p class="description">Iced Tea · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 24.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/vanillaespressoshaker.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vanilla Espresso</p>
+                                    <p class="description">Iced Coffee Shaker· Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 21.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/caramelespressoshaker.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Caramel Espresso</p>
+                                    <p class="description">Iced Coffee Shaker · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/whitechocolateespressoshaker.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">White Chocolate Espresso</p>
+                                    <p class="description">Iced Coffee Shaker · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 24.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ccmocha.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mocha</p>
+                                    <p class="description">Hot Coffee · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 21.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cclatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Latte</p>
+                                    <p class="description">Hot Coffee · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 18.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cccappuccino.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cappuccino</p>
+                                    <p class="description">Hot Coffee · Caribou Coffee</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 18.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="parka">
+                <h3>Parka</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/pmatchalatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Matcha Latte</p>
+                                    <p class="description" class="description">Hot Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/spanishlatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Spanish Latte</p>
+                                    <p class="description">Hot Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cereallatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cereal Latte</p>
+                                    <p class="description">Hot Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/pistachiolatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Pistachio Latte</p>
+                                    <p class="description">Hot Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/tiramisulatte.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Tiramisu Latte</p>
+                                    <p class="description">Hot Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cortado.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cortado</p>
+                                    <p class="description">Hot Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 18.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/v60.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">V60</p>
+                                    <p class="description">Hot Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 28.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/icedv60.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Iced V60</p>
+                                    <p class="description">Iced Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 28.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/icedamericano.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Iced Americano</p>
+                                    <p class="description">Iced Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 18.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/icedcafecappuccino.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Iced Cappuccino</p>
+                                    <p class="description">Iced Coffee · Parka</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

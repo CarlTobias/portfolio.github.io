@@ -1,0 +1,39 @@
+/* alright, so in this .css file, it sets the attributes that allow certain areas of the body to be scrolled through */
+
+/* .itemscroll sets the <div> as a scrollable element; */
+.itemscroll {
+    /* ...which is possible with these attributes */
+
+    /* "overflow-x" allows the horizontal scrolling and setting its behavior allows it not to be scrolled any more upon reaching the end */
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    /* the width is not set to 100% because it will not be scrollable if that's the case */
+    width: 49%;
+    margin-left: 65px;
+}
+
+/* this allows me to customize the scrollbar further */
+.itemscroll::-webkit-scrollbar {
+    /* "display: grid," "grid-auto-flow: column," and "grid-auto-columns: 15%" set the alignment of items inside the scrollbar  */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 15%;
+    width: fit-content;
+    height: 10px;
+}
+
+/* these allow me to customize the look of scrollbar */
+
+/* track edits the scrollbar itself */
+.itemscroll::-webkit-scrollbar-track {
+    /* i just changed the color and made the bar rounded */
+    background-color: #736C56;
+    border-radius: 100vw;
+}
+
+/* thumb edits the moving section of that scrollbar */
+.itemscroll::-webkit-scrollbar-thumb {
+    /* like the one for track, i simply changed the color and made the thumb bar round */
+    background-color: #BDB18C;
+    border-radius: 100vw;
+}

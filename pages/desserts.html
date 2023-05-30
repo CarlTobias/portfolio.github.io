@@ -1,0 +1,726 @@
+<!--
+    duplicate text:
+    the contents of this .html file along with the rest, has the exact same elements and properties as the american.html file...
+    the only differences between the documents are the images and information about each product
+
+    note: there will still be some explanation below, but not as in-depth as the first two .html files (index.html and american.html)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- the <head> tag holds metadata using a variety of tags that helps the configuuration of the .html file -->
+    <head>
+        <!-- these <meta> tags are invisible to the user, but again, it gives information to the file for configuration -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- the two here are user-visible as the tab name and icon -->
+        <title>MunchNinja</title>
+        <link rel="icon" href="../images/munchninja.svg">
+
+        <!-- these tags act like bridges to connect this file to certain stylesheets for customization -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <link rel="stylesheet" href="../css/navigation.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
+        <link rel="stylesheet" href="../css/media.css">
+    </head>
+
+    <!-- the <body> tag is responsible for holding items the user can see and interact with -->
+    <body>
+        <!-- the <header> tag holds elements that are placed in the upper part of the webpage -->
+        <header>
+            <!-- those elements include the image behind the title texts and the title texts in front of that image -->
+            <div class="img">
+                <img src="../images/food.png" class="headerimg">
+                <div class="title">
+                    <a class="home" href="/index.html"><h1>MunchNinja</h1></a>
+                    <h2>Unleash your taste buds</h2>
+                </div>
+            </div>
+            
+            <!-- those said elements also include the <nav> tag containing the nav bar -->
+            <nav class="nav">
+                <!--
+                    there are two sections to the nav bar:
+                        - the main menu;
+                        - and the dropdown menu
+                    
+                    the main menu is the <ul> tag, and it has the static, clickable elements that can be seen
+                    and the dropdown menu is seen when hoverinig over those static elements
+                -->
+                <ul>
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/american.html">American</a>
+
+                        <div class="content">
+                            <a href="../pages/american.html#mcdo">McDonald's</a>
+                            <a href="../pages/american.html#wendys">Wendy's</a>
+                            <a href="../pages/american.html#shakeshack">Shake Shack</a>
+                            <a href="../pages/american.html#buffalowildwings">Buffalo Wild Wings</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/chinese.html">Chinese</a>
+
+                        <div class="content">
+                            <a href="../pages/chinese.html#chinabistro">China Bistro</a>
+                            <a href="../pages/chinese.html#chinchin">Chin Chin</a>
+                            <a href="../pages/chinese.html#mandarinoak">Mandarin Oak</a>
+                            <a href="../pages/chinese.html#pandaexpress">Panda Express</a>
+                            <a href="../pages/chinese.html#yinyang">Yin & Yang</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/italian.html">Italian</a>
+
+                        <div class="content">
+                            <a href="../pages/italian.html#ilforno">Il Forno</a>
+                            <a href="../pages/italian.html#eataly">Eataly</a>
+                            <a href="../pages/italian.html#oregano">Oregano</a>
+                            <a href="../pages/italian.html#mamaitalia">Mama Italia</a>
+                            <a href="../pages/italian.html#littleitaly">Little Italy</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/mexican.html">Mexican</a>
+
+                        <div class="content">
+                            <a href="../pages/mexican.html#mariabonita">Maria Bonita</a>
+                            <a href="../pages/mexican.html#tacoeataco">Taco Eataco</a>
+                            <a href="../pages/mexican.html#oneeatery">One Eatery</a>
+                            <a href="../pages/mexican.html#vamostacos">Vamos Tacos</a>
+                            <a href="../pages/mexican.html#vmk">Vigilante Mexican Kitchen</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/cafe.html">Cafe</a>
+                        
+                        <div class="content">
+                            <a href="../pages/cafe.html#Cold Stone">Cold Stone</a>
+                            <a href="../pages/cafe.html#timhortons">Tim Horton's</a>
+                            <a href="../pages/cafe.html#caffenero">Caffe Nero</a>
+                            <a href="../pages/cafe.html#cariboucoffee">Caribou Coffee</a>
+                            <a href="../pages/cafe.html#parka">Parka</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/desserts.html">Desserts</a>
+                        
+                        <div class="content">
+                            <a href="../pages/desserts.html#baskinrobbins">Baskin Robbins</a>
+                            <a href="../pages/desserts.html#coldstone">Coldstone</a>
+                            <a href="../pages/desserts.html#dunkindonuts">Dunkin' Donuts</a>
+                            <a href="../pages/desserts.html#krispykreme">Krispy Kreme</a>
+                            <a href="../pages/desserts.html#cheesecakefactory">Cheesecake Factory</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- the <main> tag contains important information that is placed in the middle section of the page -->
+        <main class="maincolumns">
+            <!--
+                inside this section, there are <div> tags that:
+                    - segregates different restaurants from one another (.picks);
+                    - enable an area to be scrollable (.itemscroll);
+                    - aligns the scrollable items in a horizantal fashion (.rows);
+                    - contains information of each item (.itembox);
+            -->
+            <div class="picks" id="baskinrobbins">
+                <h3>Baskin Robbins</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/brvanilla.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vanilla</p>
+                                    <p class="description" class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brchocolate.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chocolate</p>
+                                    <p class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brcookiesandcream.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cookies and Cream</p>
+                                    <p class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brrainbowsherbert.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Rainbow Sherbert</p>
+                                    <p class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brcottoncandy.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cotton Candy</p>
+                                    <p class="description">Ice Cream Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brmintchocolate.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mint Chocolate</p>
+                                    <p class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brpralinesandcream.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Pralines and Cream</p>
+                                    <p class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brtwotomango.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">It Takes Two to Mango</p>
+                                    <p class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brstrawberrycheesecake.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Strawberry Cheesecake</p>
+                                    <p class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brbaseballnut.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Baseball Nut</p>
+                                    <p class="description">Ice Cream · Baskin Robbins</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal · 500ml</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="coldstone">
+                <h3>Cold Stone</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/csdoughforit.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dough For It</p>
+                                    <p class="description" class="description">Ice Cream · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/csbirthdaycakeremix.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Birthday Cake Remix</p>
+                                    <p class="description">Ice Cream · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/csbananacaramelcrunch.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Banana Caramel Crunch</p>
+                                    <p class="description">Ice Cream · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/csberryberryberrygood.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Berry Berry Berry Good</p>
+                                    <p class="description">Ice Cream · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cscheesecakefantasy.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cheesecake Fantasy</p>
+                                    <p class="description">Ice Cream Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cscakebatterconfetti.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cake Batter Confetti</p>
+                                    <p class="description">Cake · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 114.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cscookiedoughdelirium.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cookie Dough Delirium</p>
+                                    <p class="description">Cake · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 114.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cscookiesandcreamery.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cookies & Creamery</p>
+                                    <p class="description">Cake · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 114.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/csmidnightdelight.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Midnight Delight</p>
+                                    <p class="description">Cake · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 114.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/csstrawberrypassion.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Strawberry Passion</p>
+                                    <p class="description">Cake · Cold Stone</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 114.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="dunkindonuts">
+                <h3>Dunkin' Donuts</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/ddbavarian.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Bavarian Donut</p>
+                                    <p class="description" class="description">Pastry · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 7.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ddchocohazelnut.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Choco Hazelnut Donut</p>
+                                    <p class="description">Pastry · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 7.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ddsugared.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Sugared Donut</p>
+                                    <p class="description">Pastry · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 7.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ddchocofrosted.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Choco Frosted Donut</p>
+                                    <p class="description">Pastry · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 7.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ddlotusbiscoffglaze.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Biscoff Glaze Donut</p>
+                                    <p class="description">Pastry · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 7.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/dddulcedeleche.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dulce de Leche</p>
+                                    <p class="description">Frappe · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ddbananablueberry.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Banana Blueberry</p>
+                                    <p class="description">Cold Beverage · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 21.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ddmadagascarvanilla.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Madagascar Vanilla</p>
+                                    <p class="description">Frappe · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ddcaramel.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Caramel</p>
+                                    <p class="description">Frappe · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ddespresso.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Espresso</p>
+                                    <p class="description">Frappe · Dunkin' Donuts</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 21.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="cheesecakefactory">
+                <h3>Cheesecake Factory</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/originalcheesecake.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Original Cheesecake</p>
+                                    <p class="description" class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/freshstrawberrycheesecake.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Fresh Strawberry</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/classicbasquecheesecake.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Classic Basque</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/celebrationcheesecake.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Celebration Cheesecake</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/godivachocolate.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Godiva Chocolate</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/saltedcaramelcheesecake.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Salted Caramel</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/oreodreamextreme.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Banana Blueberry</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ultimateredvelvetcheesecake.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Ultimate Red Velvet</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chocolatemoussecheesecake.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chocolate Mousse</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/lemonmeringue.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Lemon Meringue</p>
+                                    <p class="description">Cake · Cheesecake Factory</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.90</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,342 @@
+/* this .css file focuses on the responsiveness of the site */
+
+/* this block activates when the window has a width of 1200px */
+@media screen and (max-width: 1200px) {
+    /* the main things i changed are font sizes, heights, and widths */
+    h3 {
+        /* h3 becomes a little bit smaller to accommodate the size change */
+        font-size: 26px;
+    }
+
+    .title {
+        /* for .title, i only changed the width to keep it centered as much as i can */
+        width: 110%;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .itemscroll {
+        /* inside .itemscroll, i also only changed the width to make it fit inside the smaller browser window */
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        width: 45%;
+        margin-left: 65px;
+    }
+
+    /* for the next four css blocks, i changed only the font-sizes by subtracting by 2 for every font */
+    .name {
+        /* this used to be 14px */
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #736C56;
+        width: max-content;
+        float: left;
+        margin: 15px 0px 0px 0px;
+    }
+    
+    .description {
+        /* this was 12px */
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #736C56;
+        width: max-content;
+        float: left;
+        margin: 18px 0px 0px 0px;
+    }
+    
+    .cost {
+        /* same here */
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #736C56;
+        width: max-content;
+        float: right;
+        margin: 6px 0px 0px 15px;
+    }
+    
+    .description2 {
+        /* and this was 10px */
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #736C56;
+        width: max-content;
+        float: right;
+        margin: 1px 0px 0px 18px;
+    }
+    
+    .itembox {
+        /* for .itembox, i changed the width by making it 200px instead of 250px */
+        margin: 5px;
+        padding: 5px;
+        background-color: #BDB18C;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .toppickimg {
+        /* and here, i changed the hight and width of the image inside .itembox, making it 200x200 instead of 250x250 */
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        margin-right: 30px;
+    }
+}
+
+/* this block activates when the window reaches a width of 1000px */
+@media screen and (max-width: 1000px) {
+    /* the same changes were applied to the one's i edited, but with smaller units */
+    h3 {
+        font-size: 24px;
+    }
+
+    .title {
+        width: 110%;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .itemscroll {
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        width: 45%;
+        margin-left: 65px;
+    }
+
+    .name {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #736C56;
+        width: max-content;
+        float: left;
+        margin: 15px 0px 0px 0px;
+    }
+    
+    .description {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #736C56;
+        width: max-content;
+        float: left;
+        margin: 18px 0px 0px 0px;
+    }
+    
+    .cost {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #736C56;
+        width: max-content;
+        float: right;
+        margin: 6px 0px 0px 15px;
+    }
+    
+    .description2 {
+        font-size: 6px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #736C56;
+        width: max-content;
+        float: right;
+        margin: 1px 0px 0px 18px;
+    }
+
+    .itembox {
+        margin: 5px;
+        padding: 5px;
+        background-color: #BDB18C;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+    .toppickimg {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        margin-right: 30px;
+    }
+}
+
+/* this block activates when the window is 900px in width */
+@media screen and (max-width: 900px) {
+    /* again, the same changes were applied, but with even smaller units */
+    h3 {
+        font-size: 22px;
+    }
+
+    .title {
+        width: 95%;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .itemscroll {
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        width: 40%;
+        margin-left: 65px;
+    }
+
+    .name {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #736C56;
+        width: max-content;
+        float: left;
+        margin: 15px 0px 0px 0px;
+    }
+    
+    .description {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #736C56;
+        width: max-content;
+        float: left;
+        margin: 18px 0px 0px 0px;
+    }
+    
+    .cost {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #736C56;
+        width: max-content;
+        float: right;
+        margin: 6px 0px 0px 15px;
+    }
+    
+    .description2 {
+        font-size: 6px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #736C56;
+        width: max-content;
+        float: right;
+        margin: 1px 0px 0px 18px;
+    }
+
+    .itembox {
+        margin: 5px;
+        padding: 5px;
+        background-color: #BDB18C;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+    .toppickimg {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        margin-right: 30px;
+    }
+}
+
+/* this block activates when the window becomes 500px small */
+@media screen and (max-width: 500px) {
+    /* the changes here are the same as the changes earlier, just with even smaller units the the last */
+    h3 {
+        font-size: 22px;
+    }
+
+    .title {
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .itemscroll {
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        width: 20%;
+        margin-left: 65px;
+    }
+
+    .name {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #736C56;
+        width: max-content;
+        float: left;
+        margin: 15px 0px 0px 0px;
+    }
+    
+    .description {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: #736C56;
+        width: max-content;
+        float: left;
+        margin: 18px 0px 0px 0px;
+    }
+    
+    .cost {
+        font-size: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #736C56;
+        width: max-content;
+        float: right;
+        margin: 6px 0px 0px 15px;
+    }
+    
+    .description2 {
+        font-size: 6px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #736C56;
+        width: max-content;
+        float: right;
+        margin: 1px 0px 0px 18px;
+    }
+
+    .itembox {
+        margin: 5px;
+        padding: 5px;
+        background-color: #BDB18C;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+    .toppickimg {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        margin-right: 30px;
+    }
+}
+
+/*
+    changes made here are as proportional as i can make it...
+
+    font-sizes had pixels subtracted by 2;
+    and the boxed went from 250 to 200 to 150
+*/

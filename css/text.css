@@ -1,0 +1,137 @@
+/* this .css file focuses more on giving the text tags customization to their text */
+
+/* h1 is responsible for the main header tag */
+h1 {
+    /* i used basic text customization attributes */
+    /* i changed the font-size to 60px and set a font-family that i imported from GoogleFonts using the "@import" prroperties seen inside the main .css file (styles.css) */
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    /* i set a color and a background for the text */
+    color: #736C56;
+    background-color: #BDB18C;
+    /* and finally i used some attributes to space it to my liking */
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* h2 is responsible for the subheader below the main title header */
+h2 {
+    /* i made it fairly smaller that h1 */
+    font-size: 30px;
+    /* i also used a more sans serif font */
+    font-family: 'Poppins', sans-serif;
+    /* i also sent a regular font weight for this one so it doesn't pull attention from the header text */
+    font-weight: 400;
+    /* i set my colors here (similar to h1) */
+    color: #736C56;
+    background-color: #BDB18C;
+    /* and set these attributes for proper spacing */
+    width: fit-content;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* h3 is a header for the main section of the .html files */
+h3 {
+    /* i set the text to be a readable size and considerably fit to be a header */
+    font-size: 30px;
+    /* i used a serif font to emphsize that it's a header */
+    font-family: 'Vollkorn', serif;
+    /* i set my color here, no background */
+    color: #262424;
+    /* and spacing attributes here */
+    margin-left: 65px;
+    width: fit-content;
+}
+
+/* this .class sets the position of the texts inside the <header> tag */
+.title {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+/* for the title text not to have any underline or color when given an anchor link */
+.home{
+    text-decoration: none;
+}
+
+/* this sets the font properties of the nav bar */
+.cuisines {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #736C56;
+    width: max-content;
+    margin: 0px;
+}
+
+/* starting from here, the .classes will have similar attributes to one another because they are all inside the <div> tag classified .itembox  */
+
+.name {
+    /* for .name i set the font-size to 14px and font-weight to 700 to emphasize the name of the item */
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #736C56;
+    width: max-content;
+    /* i made it float left, so it sticks to the left */
+    float: left;
+    /* and set this margin to align it to where i want and give it spacing */
+    margin: 15px 0px 0px 0px;
+}
+
+.description {
+    /* for .description, i set the font a little smaller (12px) and set the font-weight to 400 so the focus will still be on .name*/
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #736C56;
+    width: max-content;
+    /* i also made this float left to be paired along with .name */
+    float: left;
+    /* and set the margin to align and space it nicely */
+    margin: 18px 0px 0px 0px;
+}
+
+.cost {
+    /* .cost sets the properties of the text associated with the price of the item */
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    /* it has a lighter weight than the previous texts because i don't want it to be the main or secondary focus */
+    font-weight: 300;
+    color: #736C56;
+    width: max-content;
+    /* i have this one float right so it stays on the other side across .name */
+    float: right;
+    /* and like the rest, this is to align and space the text appropriately */
+    margin: 6px 0px 0px 15px;
+}
+
+.description2 {
+    /*
+        .description2 has the smallest font size and a light font-weight as well
+        because it's main purpose it just to give additional information, it doesn't need to be big and bold
+    */
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #736C56;
+    width: max-content;
+    /* it is also floated right to be paired with .cost */
+    float: right;
+    /* and again, margins are given for proper spacing and alignment */
+    margin: 1px 0px 0px 18px;
+}

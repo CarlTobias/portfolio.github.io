@@ -1,0 +1,121 @@
+/*
+    this is the main css file that i have made;
+    i have also made other multiple ones that have specific information, so that no file will be too crowded...
+    it also gives a sense of organization, which will cause less confusion
+*/
+
+/* these "@import" attributes take fonts from GoogleFonts and allows this file to use them */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+
+* {
+    /* this here is a universal selector */
+    /* i set the margin and padding for everything for a less confusing time when trying to align my elements*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* inside the body, i set the display to flex and its direction to column to align the items inside it vertically */
+    display: flex;
+    flex-direction: column;
+    /* i also set the color using the attribute below */
+    background-color: #F0E1B1;
+    /* the overflow for x is hidden so the user cannot scroll from side to side, while y is set to scroll */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* i set the height to auto as well to avoid things from being smushed */
+    height: auto;
+}
+
+header {
+    /* for the header, i set attributes to align things to the center; */
+    align-items: center;
+    position: relative;
+    /* and set the height a certain amount so the section doesn't take over the whole screen  */
+    height: 100vh;
+}
+
+main {
+    /* for main, i set position to absolute and moved it down by 70% to be aligned right as the nav bar ends  */
+    position: absolute;
+    top: 70%;
+}
+
+.headerimg {
+    /* for this .class, i set user-select to none so that the image will not be touched; */
+    user-select: none;
+    /* position is set to relative to make it moveable without ruining the alignment too much */
+    position: relative;
+    top: 0;
+    left: 0;
+    /* i also set the size of the image here, the image isn't too big */
+    width: 1495px;
+    height: 500px;
+    /* i also had to set the margin to a negative number to make it really stick right above the nav bar */
+    margin-bottom: -4px;
+}
+
+.maincolumns {
+    /* for this .class, i set the display to flex and i justified content to center for alignment */
+    display: flex;
+    justify-content: center;
+    /* i also set flex-wrap to wrap so that it doesn't continue in one long horizontal line */
+    flex-wrap: wrap;
+    /* added a margin for the bottom so there's some space to spare */
+    margin-bottom: 50px;
+}
+
+.rows {
+    /* for .rows, i made set position to relative to be able to control it in an easier way and set left to 0 */
+    position: relative;
+    left: 0px;
+    /* and i used "display: flex" along with "justify-content: left to allow it to be aligned in a horizontal manner */
+    display: flex;
+    justify-content: left;
+}
+
+.picks {
+    /* for .picks, i added margins to the top and bottom so that the elements arent crowded and there's an appropriate amount of space */
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.toppickimg {
+    /* this block here sets the size of each food item image and makes the corners rounded by 5px */
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.itembox{
+    /* attributes for .itembox mainly sets the size and spacing of the element */
+    width: 250px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    /* i also set the color by using "background-color" */
+    background-color: #BDB18C;
+}
+
+.box {
+    /*
+        this .class hold all the text inside itembox...
+        i set it to display to flex and justify-content to space-between with 0 paddingto allow the conents to be next to each other while also fitting inside a limited area
+    */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+/* the last two .classes here just give alignment and spacing to the sections inside .box */
+.leftside {
+    line-height: 0px;
+}
+
+.rightside {
+    float: right;
+    line-height: 17px;
+}

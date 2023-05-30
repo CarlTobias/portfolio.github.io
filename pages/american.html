@@ -1,0 +1,878 @@
+<!-- alright, so this next page has very similar code to the index.html file... -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 
+            if you'll notice here, this file has the same contents inside the <head> tag as the initial file that holds the home page;
+            i didn't add or remove anything because each .html file that i create will have the same type of elements, so i will not need anything else
+         -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>MunchNinja</title>
+        <link rel="icon" href="../images/munchninja.svg">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/adescription2.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <link rel="stylesheet" href="../css/navigation.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
+        <link rel="stylesheet" href="../css/media.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- the <header> tag is also identical to the initial page; -->
+            <div class="img">
+                <!-- the same picture; -->
+                <img src="../images/food.png" class="headerimg">
+                <div class="title">
+                    <!-- the same text; -->
+                    <a class="home" href="/index.html"><h1>MunchNinja</h1></a>
+                    <h2>Unleash your taste buds</h2>
+                </div>
+            </div>
+        
+            <nav class="nav">
+                <!-- and the same nav bar -->
+                <ul>
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/american.html">American</a>
+
+                        <div class="content">
+                            <a href="../pages/american.html#mcdo">McDonald's</a>
+                            <a href="../pages/american.html#wendys">Wendy's</a>
+                            <a href="../pages/american.html#shakeshack">Shake Shack</a>
+                            <a href="../pages/american.html#buffalowildwings">Buffalo Wild Wings</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/chinese.html">Chinese</a>
+
+                        <div class="content">
+                            <a href="../pages/chinese.html#chinabistro">China Bistro</a>
+                            <a href="../pages/chinese.html#chinchin">Chin Chin</a>
+                            <a href="../pages/chinese.html#mandarinoak">Mandarin Oak</a>
+                            <a href="../pages/chinese.html#pandaexpress">Panda Express</a>
+                            <a href="../pages/chinese.html#yinyang">Yin & Yang</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/italian.html">Italian</a>
+
+                        <div class="content">
+                            <a href="../pages/italian.html#ilforno">Il Forno</a>
+                            <a href="../pages/italian.html#eataly">Eataly</a>
+                            <a href="../pages/italian.html#oregano">Oregano</a>
+                            <a href="../pages/italian.html#mamaitalia">Mama Italia</a>
+                            <a href="../pages/italian.html#littleitaly">Little Italy</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/mexican.html">Mexican</a>
+
+                        <div class="content">
+                            <a href="../pages/mexican.html#mariabonita">Maria Bonita</a>
+                            <a href="../pages/mexican.html#tacoeataco">Taco Eataco</a>
+                            <a href="../pages/mexican.html#oneeatery">One Eatery</a>
+                            <a href="../pages/mexican.html#vamostacos">Vamos Tacos</a>
+                            <a href="../pages/mexican.html#vmk">Vigilante Mexican Kitchen</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/cafe.html">Cafe</a>
+                        
+                        <div class="content">
+                            <a href="../pages/cafe.html#starbucks">Starbucks</a>
+                            <a href="../pages/cafe.html#timhortons">Tim Horton's</a>
+                            <a href="../pages/cafe.html#caffenero">Caffe Nero</a>
+                            <a href="../pages/cafe.html#cariboucoffee">Caribou Coffee</a>
+                            <a href="../pages/cafe.html#parka">Parka</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/desserts.html">Desserts</a>
+                        
+                        <div class="content">
+                            <a href="../pages/desserts.html#baskinrobbins">Baskin Robbins</a>
+                            <a href="../pages/desserts.html#coldstone">Coldstone</a>
+                            <a href="../pages/desserts.html#dunkindonuts">Dunkin' Donuts</a>
+                            <a href="../pages/desserts.html#krispykreme">Krispy Kreme</a>
+                            <a href="../pages/desserts.html#cheesecakefactory">Cheesecake Factory</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- for the <main> tag, it's classified the as "maincolums" once again to align elements vertically -->
+        <main class="maincolumns">
+            <!--  -->
+            <div class="picks">
+                <!-- the use of .picks is also the same -->
+                <h3>Top Picks for American Cuisine</h3>
+                <!-- 
+                    the very first scroll area was something that could be found at the home page
+                    i added it here for primarily for specificity, so the user may see the top rated items without having to look for it individually
+                 -->
+                 <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/bigmac.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Big Mac</p>
+                                    <p class="description">Burger · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/mushroommeltdlx.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mushroom Melt Dlx.</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/10bonelesswings.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Boneless Wings</p>
+                                    <p class="description" class="description">Wings · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 53.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickenteriyaki.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Teriyaki</p>
+                                    <p class="description">Rice Bowls · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/beefanator.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Beefanator</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 34.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/shackburger.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">ShackBurger</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 30.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/20wing.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">20/20 Wings</p>
+                                    <p class="description" class="description">Wings · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 120.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/newyorkhotdog.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">New York Hotdog</p>
+                                    <p class="description" class="description">Hotdog · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 12.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/dave'sdouble.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dave's Double</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 28.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/bigtasty.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Big Tasty</p>
+                                    <p class="description" class="description">Burger · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                after the top picks, all the inidividual restaurants are shown;
+
+                from mcdonald's, to wendy's, to shakeshack, and buffalowildwings...
+                they all have the same layout, but different content
+
+                every .picks from here will also have an id so that the user can navigate to it using the dropdown menu...
+                i did not, however add it to the first .picks because it can be seen immediaetly when transferring to the page
+             -->
+            <div class="picks" id="mcdo">
+                <!-- once more, the <div" tag classified as "picks" groups together the scroll section along with its header; -->
+                <h3>McDonald's</h3>
+                <div class="itemscroll">
+                    <!-- .itemscroll enables .rows to be scrolled via css; -->
+                    <div class="rows">
+                        <!-- .rows groups the tags classified as .itembox together and aligns them in a horizontal manner; -->
+                        <div class="itembox">
+                            <!-- and .itembox holds the product image and its necessary descriptions together neatly -->
+                            <img src="../images/bigtasty.png" class="toppickimg">
+                            <div class="box">
+                                <!--
+                                    the <div> tags below (held together by a <div> tag classed as .box)
+                                    separates the information about a specific product and arranges it neatly with the use of css
+                                -->
+                                <div class="leftside">
+                                    <p class="name">Big Tasty</p>
+                                    <p class="description" class="description">Burger · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 23.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- the process is repeated to create a whole list of items that the user may scroll through -->
+                        <div class="itembox">
+                            <img src="../images/bigmac.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Big Mac</p>
+                                    <p class="description">Burger · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/mushroombeef.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mushroom Beef</p>
+                                    <p class="description">Burger · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 26.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/mushroomchicken.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mushroom Chicken</p>
+                                    <p class="description">Burger · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 26.00</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/mcchicken.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">McChicken</p>
+                                    <p class="description">Burger · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cheeseburger.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cheeseburger</p>
+                                    <p class="description">Burger · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 9.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/beefmushroom.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Beef with Mushroom</p>
+                                    <p class="description">Rice Bowls · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickenteriyaki.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Teriyaki</p>
+                                    <p class="description">Rice Bowls · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickencurry.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Curry</p>
+                                    <p class="description">Rice Bowls · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/nuggets.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Nuggets</p>
+                                    <p class="description">Sides · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 7.00</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- every restaurant has its own scroll area and has the exact same elements seen and explained above -->
+            <div class="picks" id="wendys">
+                <h3>Wendy's</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/mushroommeltdlx.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mushroom Melt Dlx.</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/beefbigcheese.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Beef Big Cheese</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 32.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/dave'ssingle.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dave's Single</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/dave'sdouble.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dave's Double</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 28.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/dave'striple.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dave's Triple</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 36.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/beefanator.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Beefanator</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 34.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/bonelesswings.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Boneless Wings</p>
+                                    <p class="description" class="description">Wings · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chilicheesefries.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chili Cheese Fries</p>
+                                    <p class="description" class="description">Fries · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 16.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/mexicantacosalad.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mexican Taco</p>
+                                    <p class="description" class="description">Salad · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 10.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/italianceasarsalad.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Italian Ceasar</p>
+                                    <p class="description" class="description">Salad · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 10.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="shakeshack">
+                <h3>Shake Shack</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/bbqcheddar.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Barbeque Cheddar</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00 / 50.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/falafelshack.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Falafel Shack</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 10.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/shackburger.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">ShackBurger</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 30.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/doubleshack.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Double ShackBurger</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/doublecheeseburger.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Double Cheeseburger</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/smokeshack.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">SmokeShack</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/grilledcheese.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Grilled Cheese</p>
+                                    <p class="description" class="description">Sandwich · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 17.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/shackstack.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">ShackStack</p>
+                                    <p class="description" class="description">Burger · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/newyorkhotdog.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">New York Hotdog</p>
+                                    <p class="description" class="description">Hotdog · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 12.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/bbqvealbacon.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">BBQ Veal Bacon Cheese</p>
+                                    <p class="description" class="description">Fries · Wendy's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 35.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="picks" id="buffalowildwings">
+            <h3>Buffalo Wild Wings</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/allamericancheeseburger.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">American Cheeseburger</p>
+                                    <p class="description" class="description">Burger · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 63.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/10bonelesswings.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Boneless Wings</p>
+                                    <p class="description" class="description">Wings · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 53.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/buffaloranch.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Buffalo Ranch</p>
+                                    <p class="description" class="description">Burrito · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 58.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/20wing.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">20/20 Wings</p>
+                                    <p class="description" class="description">Wings · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 120.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/friedpickles.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Fried Pickles</p>
+                                    <p class="description" class="description">Fried · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal · Vegetarian<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/saucychicken.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Saucy Chicken Burger</p>
+                                    <p class="description" class="description">Burger · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 45.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/mozzarellasticks.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mozzarella Sticks</p>
+                                    <p class="description" class="description">Fried · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal · Dairy<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/2buffalobirdwings.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Buffalo Bird Wings</p>
+                                    <p class="description" class="description">Sandwich · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 67.00</p>
+                                    <p class="description2">Halal · Poultry<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/brisketstreettacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Brisket Street Tacos</p>
+                                    <p class="description" class="description">Tacos · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 80.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/streettacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Street Tacos</p>
+                                    <p class="description" class="description">Tacos · Buffalo Wild Wings</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 72.00</p>
+                                    <p class="description2">Halal · Beef<p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </main>
+    </body>
+</html

@@ -1,0 +1,868 @@
+<!--
+    duplicate text:
+    the contents of this .html file along with the rest, has the exact same elements and properties as the american.html file...
+    the only differences between the documents are the images and information about each product
+
+    note: there will still be some explanation below, but not as in-depth as the first two .html files (index.html and american.html)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- inside the <head> tag, there are <meta> tags that are not seen by the user but gives useful information to the webpage -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- there are also these two tags that are visible to the user as the tab name and icon -->
+        <title>MunchNinja</title>
+        <link rel="icon" href="../images/munchninja.svg">
+
+        <!-- these are linking tags that connect this file to specific stylesheets that help customize the file -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <link rel="stylesheet" href="../css/navigation.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
+        <link rel="stylesheet" href="../css/media.css">
+    </head>
+
+    <body>
+        <!-- inside the <body> tag, we have the properties that the user may interact with -->
+        <header>
+            <!--
+                the <header> tag is in charge of displaying information in the top part of the page
+                part of that information is the background image and title text (seen inside the <div> tag classified "img")
+            -->
+            <div class="img">
+                <img src="../images/food.png" class="headerimg">
+                <div class="title">
+                    <a class="home" href="/index.html"><h1>MunchNinja</h1></a>
+                    <h2>Unleash your taste buds</h2>
+                </div>
+            </div>
+            
+            <!-- the <nav> tag is a part of the header placed right below the <div> above -->
+            <nav class="nav">
+                <!-- the nav bar contains a menu for navigation and a dropdown menu for a more specific action -->
+                <ul>
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/american.html">American</a>
+
+                        <div class="content">
+                            <a href="../pages/american.html#mcdo">McDonald's</a>
+                            <a href="../pages/american.html#wendys">Wendy's</a>
+                            <a href="../pages/american.html#shakeshack">Shake Shack</a>
+                            <a href="../pages/american.html#buffalowildwings">Buffalo Wild Wings</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/chinese.html">Chinese</a>
+
+                        <div class="content">
+                            <a href="../pages/chinese.html#chinabistro">China Bistro</a>
+                            <a href="../pages/chinese.html#chinchin">Chin Chin</a>
+                            <a href="../pages/chinese.html#mandarinoak">Mandarin Oak</a>
+                            <a href="../pages/chinese.html#pandaexpress">Panda Express</a>
+                            <a href="../pages/chinese.html#yinyang">Yin & Yang</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/italian.html">Italian</a>
+
+                        <div class="content">
+                            <a href="../pages/italian.html#ilforno">Maria Bonita</a>
+                            <a href="../pages/italian.html#eataly">Eataly</a>
+                            <a href="../pages/italian.html#Vamos Tacos">Vamos Tacos</a>
+                            <a href="../pages/italian.html#mamaitalia">Mama Italia</a>
+                            <a href="../pages/italian.html#littleitaly">Little Italy</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/mexican.html">Mexican</a>
+
+                        <div class="content">
+                            <a href="../pages/mexican.html#mariabonita">Maria Bonita</a>
+                            <a href="../pages/mexican.html#tacoeataco">Taco Eataco</a>
+                            <a href="../pages/mexican.html#oneeatery">One Eatery</a>
+                            <a href="../pages/mexican.html#vamostacos">Vamos Tacos</a>
+                            <a href="../pages/mexican.html#vmk">Vigilante Mexican Kitchen</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/cafe.html">Cafe</a>
+                        
+                        <div class="content">
+                            <a href="../pages/cafe.html#starbucks">Starbucks</a>
+                            <a href="../pages/cafe.html#timhortons">Tim Horton's</a>
+                            <a href="../pages/cafe.html#caffenero">Caffe Nero</a>
+                            <a href="../pages/cafe.html#cariboucoffee">Caribou Coffee</a>
+                            <a href="../pages/cafe.html#parka">Parka</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/desserts.html">Desserts</a>
+                        
+                        <div class="content">
+                            <a href="../pages/desserts.html#baskinrobbins">Baskin Robbins</a>
+                            <a href="../pages/desserts.html#coldstone">Coldstone</a>
+                            <a href="../pages/desserts.html#dunkindonuts">Dunkin' Donuts</a>
+                            <a href="../pages/desserts.html#krispykreme">Krispy Kreme</a>
+                            <a href="../pages/desserts.html#cheesecakefactory">Cheesecake Factory</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="maincolumns">
+            <!--
+                the <main> tag has all the information in the middle area of the page
+                
+                inside, there are <div> tags that:
+                    - contain different restaurant menus (.picks);
+                    - allow items to be scrolled (.itemscroll);
+                    - align the scrollable items horizontally (.rows);
+                    - contain all the elements of each food item (.itembox);
+            -->
+            <div class="picks">
+                <h3>Top Picks for Mexican Cuisine</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/nachosmachos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Nachos Machos</p>
+                                    <p class="description" class="description">Tapas · Maria Bonita</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 49.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/jumboquesadilla.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Jumbo Quesadilla</p>
+                                    <p class="description" class="description">Quesadilla · Maria Bonita</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 55.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chilliconcarneburrito.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chilli con Carne Burrito</p>
+                                    <p class="description">Burrito · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 36.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/elchicoburritobowl.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">El Chico Bowl</p>
+                                    <p class="description">Burrito Bowl · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 47.25</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cali.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cali Tacos</p>
+                                    <p class="description">Taco · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 25.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/vamostacobombs.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vamos Taco Bombs</p>
+                                    <p class="description">Tapas · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/guacamoleandchips.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Guacamole & Chips</p>
+                                    <p class="description">Tapas · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/crispychickentacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Crispy Chicken Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/tropicaltacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Tropical Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/elchicoburrito.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">El Chico Burrito</p>
+                                    <p class="description">Burrito · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 36.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="mariabonita">
+                <h3>Maria Bonita</h3>
+                    <div class="itemscroll">
+                        <div class="rows">
+                            <div class="itembox">
+                                <img src="../images/flautas.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Flautas</p>
+                                        <p class="description" class="description">Tapas · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 55.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/nachosmachos.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Nachos Machos</p>
+                                        <p class="description" class="description">Tapas · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 49.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/burritos.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Burritos</p>
+                                        <p class="description" class="description">Burrito · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 59.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/jumboquesadilla.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Jumbo Quesadilla</p>
+                                        <p class="description" class="description">Quesadilla · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 55.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/tacosdecarneasada.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Tacos de Carne Asada</p>
+                                        <p class="description" class="description">Taco · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 61.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/tacosgringo.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Tacos Gringo</p>
+                                        <p class="description" class="description">Taco · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 53.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/tacorosarito.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Taco Rosarito</p>
+                                        <p class="description" class="description">Taco · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 78.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/tacocampechano.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Taco Campechano</p>
+                                        <p class="description" class="description">Taco · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 68.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/tamalescoyoacan.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Tamales Coyoacan</p>
+                                        <p class="description" class="description">Tamales · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 56.70</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="itembox">
+                                <img src="../images/enchiladasrojas.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Enchiladas Rojas</p>
+                                        <p class="description" class="description">Enchiladas · Maria Bonita</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 61.00</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="picks" id="tacoeataco">
+                <h3>Taco Eataco</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/vegantacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vegan Tacos</p>
+                                    <p class="description" class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 34.00</p>
+                                    <p class="description2">Halal · Vegan<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/vegetariantacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vegetarian Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 34.00</p>
+                                    <p class="description2">Halal · Vegetarian</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/grilledchickentacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Grilled Chicken Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/crispychickentacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Crispy Chicken Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chiliconcarnetacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chilli Con Carne</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/steaktacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Steak Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/grilledshrimptacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Grilled Shrimp Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal · Seafood</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/crispyshrimptacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Crispy Shrimp Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal · Seafood</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/tropicaltacos.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Tropical Tacos</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/buildataco.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Build-A-Taco</p>
+                                    <p class="description">Taco · Taco Eataco</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="vamostacos">
+                <h3>Vamos Tacos</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/tijuana.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Tijuana Tacos</p>
+                                    <p class="description" class="description">Taco · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 22.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cali.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cali Tacos</p>
+                                    <p class="description">Taco · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 25.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/baja.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Baja Tacos</p>
+                                    <p class="description">Taco · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 25.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/alpastor.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Al Pastor Tacos</p>
+                                    <p class="description">Taco · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 22.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/cancun.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cancun Tacos</p>
+                                    <p class="description">Taco · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 22.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/gringo.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Gringo Tacos</p>
+                                    <p class="description">Taco · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 22.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/habanero.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Habanero Tacos</p>
+                                    <p class="description">Taco · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 22.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/vamostacobombs.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vamos Taco Bombs</p>
+                                    <p class="description">Tapas · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 19.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chiliconcarnechips.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chili Con Carne</p>
+                                    <p class="description">Tapas · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 29.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/risottopollo.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Risotto Pollo</p>
+                                    <p class="description">Beef · Vamos Tacos</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 58.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="vmk">
+                <h3>Vigilante Mexican Kitchen</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/buildyourownbowl.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Build Your Own Bowl</p>
+                                    <p class="description" class="description">Burrito Bowl · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 43.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/elchicoburritobowl.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">El Chico Bowl</p>
+                                    <p class="description">Burrito Bowl · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 47.25</p>
+                                    <p class="description2">Halal · Poultry</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chilliconcarneburrito.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chilli con Carne Burrito</p>
+                                    <p class="description">Burrito · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 36.00</p>
+                                    <p class="description2">Halal · Beef</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/elchicoburrito.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">El Chico Burrito</p>
+                                    <p class="description">Burrito · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 36.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/veggielanteburrito.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Veggie-lante Burrito</p>
+                                    <p class="description">Burrito · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 35.00</p>
+                                    <p class="description2">Halal · Vegan</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/elchicoquesadillas.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">El Chico Quesadillas</p>
+                                    <p class="description">Quesadilla · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 36.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/veggielantequesadillas.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Veggie-lante Quesadillas</p>
+                                    <p class="description">Quesadilla · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 33.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/elchicofeistyfajita.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">El Chico Feisty Fajita</p>
+                                    <p class="description">Fajita · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 35.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/vigilantefajitabombs.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Fajita Bombs</p>
+                                    <p class="description">Tapas · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 16.00</p>
+                                    <p class="description2">Halal · Seafood<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/guacamoleandchips.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Guacamole & Chips</p>
+                                    <p class="description">Tapas · VMK</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

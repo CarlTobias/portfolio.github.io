@@ -1,0 +1,1015 @@
+<!--
+    the contents of this .html file along with the rest, has the exact same elements and properties as the american.html file...
+    the only differences between the documents are the images and information about each product
+
+    note: there will still be some explanation below, but not as in-depth as the first two .html files (index.html and american.html)
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        this is the <head> tag, it has all the elements that the user will not see but is important information for the file
+        it also has name and image of the tab (which can be customized like you see below)
+    -->
+    <head>
+        <!-- imortant data that holds information -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- visible name and icon of the file when opened in a browser -->
+        <title>MunchNinja</title>
+        <link rel="icon" href="../images/munchninja.svg">
+
+        <!-- <link> tags that connect this file to stylesheets for customization -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/text.css">
+        <link rel="stylesheet" href="../css/navigation.css">
+        <link rel="stylesheet" href="../css/scrollbar.css">
+        <link rel="stylesheet" href="../css/media.css">
+    </head>
+
+    <!-- here, we have the aspect of the file that the user will be able to see -->
+    <body>
+        <!-- the <header> tag holds the elements in the upper section of the page -->
+        <header>
+            <!-- the <div> tag here holds the background image and title texts together -->
+            <div class="img">
+                <img src="../images/food.png" class="headerimg">
+                <div class="title">
+                    <a class="home" href="/index.html"><h1>MunchNinja</h1></a>
+                    <h2>Unleash your taste buds</h2>
+                </div>
+            </div>
+
+            <!-- the <nav> tag encompasses the whole nav bar -->
+            <nav class="nav">
+                <!-- <ul> holds the static, clickable elements ("American," "Chinese," etc.) -->
+                <ul>
+                    <!-- <li> holds the content for a dropdown property which can be seen when hovering over the <ul> elements -->
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/american.html">American</a>
+
+                        <div class="content">
+                            <a href="../pages/american.html#mcdo">McDonald's</a>
+                            <a href="../pages/american.html#wendys">Wendy's</a>
+                            <a href="../pages/american.html#shakeshack">Shake Shack</a>
+                            <a href="../pages/american.html#buffalowildwings">Buffalo Wild Wings</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/chinese.html">Chinese</a>
+
+                        <div class="content">
+                            <a href="../pages/chinese.html#chinabistro">China Bistro</a>
+                            <a href="../pages/chinese.html#chinchin">Chin Chin</a>
+                            <a href="../pages/chinese.html#mandarinoak">Mandarin Oak</a>
+                            <a href="../pages/chinese.html#pandaexpress">Panda Express</a>
+                            <a href="../pages/chinese.html#yinyang">Yin & Yang</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/italian.html">Italian</a>
+
+                        <div class="content">
+                            <a href="../pages/italian.html#ilforno">Il Forno</a>
+                            <a href="../pages/italian.html#eataly">Eataly</a>
+                            <a href="../pages/italian.html#oregano">Oregano</a>
+                            <a href="../pages/italian.html#mamaitalia">Mama Italia</a>
+                            <a href="../pages/italian.html#littleitaly">Little Italy</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/mexican.html">Mexican</a>
+
+                        <div class="content">
+                            <a href="../pages/mexican.html#mariabonita">Maria Bonita</a>
+                            <a href="../pages/mexican.html#tacoeataco">Taco Eataco</a>
+                            <a href="../pages/mexican.html#oneeatery">One Eatery</a>
+                            <a href="../pages/mexican.html#vamostacos">Vamos Tacos</a>
+                            <a href="../pages/mexican.html#vmk">Vigilante Mexican Kitchen</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/cafe.html">Cafe</a>
+
+                        <div class="content">
+                            <a href="../pages/cafe.html#starbucks">Starbucks</a>
+                            <a href="../pages/cafe.html#timhortons">Tim Horton's</a>
+                            <a href="../pages/cafe.html#caffenero">Caffe Nero</a>
+                            <a href="../pages/cafe.html#cariboucoffee">Caribou Coffee</a>
+                            <a href="../pages/cafe.html#parka">Parka</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="cuisines" href="../pages/desserts.html">Desserts</a>
+
+                        <div class="content">
+                            <a href="../pages/desserts.html#baskinrobbins">Baskin Robbins</a>
+                            <a href="../pages/desserts.html#coldstone">Coldstone</a>
+                            <a href="../pages/desserts.html#dunkindonuts">Dunkin' Donuts</a>
+                            <a href="../pages/desserts.html#krispykreme">Krispy Kreme</a>
+                            <a href="../pages/desserts.html#cheesecakefactory">Cheesecake Factory</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- <main> is the focal point of the page, it holds all the important information -->
+        <main class="maincolumns">
+            <!-- each .pick class contains a header with a scroll section -->
+            <div class="picks">
+                <h3>Top Picks for Chinese Cuisine</h3>
+                <div class="itemscroll">
+                    <!--
+                        each .itemscroll contains the scroll area,
+                        which is made horizontal with the use of .rows
+                        and each .itembox holds elements for the individual products
+                    -->
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/veganbao.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vegan Bao</p>
+                                    <p class="description" class="description">Dumpling · China Bistro</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 35.70</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/szechuandimsum.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Szechuan Dim Sum</p>
+                                    <p class="description">Dumpling · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickendimsum.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Dim Sum</p>
+                                    <p class="description">Dumpling · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/californiaroll.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">California Roll</p>
+                                    <p class="description" class="description">Sushi · China Bistro</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 33.60</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/specialricelamb.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Special Rice</p>
+                                    <p class="description">Rice · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/broccolibeef.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Broccoli Beef</p>
+                                    <p class="description" class="description">Beef · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/panfriednoodles.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Pan Fried Noodles</p>
+                                    <p class="description" class="description">Stir-Fry · China Bistro</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 55.65</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ccnasigoreng.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Nasi Goreng</p>
+                                    <p class="description">Rice · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 46.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/orangechicken.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Orange Chicken</p>
+                                    <p class="description">Chicken · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 32.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/specialgarlicprawn.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Special Garlic Prawn</p>
+                                    <p class="description">Seafood · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 56.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="chinabistro">
+                <h3>China Bistro</h3>
+                    <div class="itemscroll">
+                        <div class="rows">
+                            <div class="itembox">
+                                <img src="../images/sanchoybao.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">San Choy Bao</p>
+                                        <p class="description" class="description">Dumpling · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 35.70</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/veganbao.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Vegan Bao</p>
+                                        <p class="description" class="description">Dumpling · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 35.70</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/californiaroll.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">California Roll</p>
+                                        <p class="description" class="description">Sushi · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 33.60</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/panfriednoodles.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Pan Fried Noodles</p>
+                                        <p class="description" class="description">Stir-Fry · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 55.65</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/cbnasigoreng.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Nasi Goreng</p>
+                                        <p class="description" class="description">Stir-Fry · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 57.75</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/shanghaichickendimsum.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Chicken Dim Sum</p>
+                                        <p class="description" class="description">Dumpling · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 28.35</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/chickenspringrolls.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Chicken Spring Rolls</p>
+                                        <p class="description" class="description">Fried · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 50.40</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/chickenwings.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Chicken Wings</p>
+                                        <p class="description" class="description">Wings · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 57.75</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/mapotofu.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Mapo Tofu</p>
+                                        <p class="description" class="description">Soup · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 52.50</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="itembox">
+                                <img src="../images/khaosuey.png" class="toppickimg">
+                                <div class="box">
+                                    <div class="leftside">
+                                        <p class="name">Khao Suey</p>
+                                        <p class="description" class="description">Soup · China Bistro</p>
+                                    </div>
+                                    <div class="rightside">
+                                        <p class="cost">AED 58.80</p>
+                                        <p class="description2">Halal<p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="picks" id="chinchin">
+                <h3>Chin Chin</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/kungpaodimsum.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Kung Pao Dim Sum</p>
+                                    <p class="description" class="description">Dumpling · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/vegetablelunch.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vegetable Lunch</p>
+                                    <p class="description">Rice · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 33.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickendimsum.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Dim Sum</p>
+                                    <p class="description">Dumpling · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 27.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/prawntomyum.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Prawn Tom Yum</p>
+                                    <p class="description">Soup · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 30.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ccmanchowsoupveg.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vegetable Manchow</p>
+                                    <p class="description">Soup · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickensweetcorn.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Sweet Corn Soup</p>
+                                    <p class="description">Soup · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/szechuanwings.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Szechuan Wings</p>
+                                    <p class="description">Wings · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ccdynamiteshrimp.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dynamite Shrimp</p>
+                                    <p class="description">Seafood · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 43.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/ccnasigoreng.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Nasi Goreng</p>
+                                    <p class="description">Rice · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 46.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/edamame.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Edamame</p>
+                                    <p class="description">Sides · Chin Chin</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 31.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="mandarinoak">
+                <h3>Mandarin Oak</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/chickenandprawngyoza.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken & Prawn Gyoza</p>
+                                    <p class="description" class="description">Dumpling · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 36.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/momanchowsoupveg.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Vegetable Manchow</p>
+                                    <p class="description">Soup · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/monasigoreng.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Nasi Goreng</p>
+                                    <p class="description">Rice · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 41.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickenshumai.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Shu Mai</p>
+                                    <p class="description">Dumpling · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 33.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/dynamitechicken.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dynamite Chicken</p>
+                                    <p class="description">Chicken · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 30.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/steamedchickendumpling.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Steamed Dumpling</p>
+                                    <p class="description">Dumpling · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 32.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/shanghaistirfriednoodles.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Shanghai Noodles</p>
+                                    <p class="description">Stir Fried · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 34.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/modynamiteshrimp.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Dynamite Shrimp</p>
+                                    <p class="description">Seafood · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 39.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickencurry.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Kung Pao Sauce</p>
+                                    <p class="description">Soup · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 30.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/mongolianbeef.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Mongolian Beef</p>
+                                    <p class="description">Beef · Mandarin Oak</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 47.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="pandaexpress">
+                <h3>Panda Express</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/broccolibeef.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Broccoli Beef</p>
+                                    <p class="description" class="description">Beef · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/beefnoodlesoup.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Beef Noodle Soup</p>
+                                    <p class="description">Soup · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 32.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/butterflyprawns.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Butterfly Prawns</p>
+                                    <p class="description">Seafood · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/orangechicken.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Orange Chicken</p>
+                                    <p class="description">Chicken · McDonald's</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 32.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/manchurianchicken.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Manchurian Chicken</p>
+                                    <p class="description">Chicken · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 26.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/sweetandsourchicken.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Sweet & Sour Chicken</p>
+                                    <p class="description">Chicken · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 30.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/friedrice.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Fried Rice</p>
+                                    <p class="description">Rice · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 22.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chowmein.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chow Mein</p>
+                                    <p class="description">Stir Fried · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 22.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickenpotstickers.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Potstickers</p>
+                                    <p class="description">Dumpling · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 20.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/springrolls.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Spring Rolls</p>
+                                    <p class="description">Sides · Panda Express</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">Price on Selection</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="picks" id="yinyang">
+                <h3>Yin & Yang</h3>
+                <div class="itemscroll">
+                    <div class="rows">
+                        <div class="itembox">
+                            <img src="../images/cocktaildimsum.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Cocktail Dim Sum</p>
+                                    <p class="description" class="description">Dumpling · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/szechuandimsum.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Szechuan Dim Sum</p>
+                                    <p class="description">Dumpling · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 40.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/specialricelamb.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Special Rice</p>
+                                    <p class="description">Rice · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 38.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/szechuanchilinoodlelamb.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Szechuan Chili Noodle</p>
+                                    <p class="description">Stir Fried · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 48.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/saltandpeppersquid.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Salt and Pepper</p>
+                                    <p class="description">Seafood · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 45.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/spicycuminlamb.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Spicy Cumin Lamb</p>
+                                    <p class="description">Lamb · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 55.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/aromaticcrispyfish.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Aromatic Crispy Fish</p>
+                                    <p class="description">Seafood · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 46.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/szechuanchickennewstyle.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Szechuan Chicken</p>
+                                    <p class="description">Chicken · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 46.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/chickenshashlik.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Chicken Shashlik</p>
+                                    <p class="description">Chicken · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 48.00</p>
+                                    <p class="description2">Halal<p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itembox">
+                            <img src="../images/specialgarlicprawn.png" class="toppickimg">
+                            <div class="box">
+                                <div class="leftside">
+                                    <p class="name">Special Garlic Prawn</p>
+                                    <p class="description">Seafood · Yin & Yang</p>
+                                </div>
+                                <div class="rightside">
+                                    <p class="cost">AED 56.00</p>
+                                    <p class="description2">Halal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
