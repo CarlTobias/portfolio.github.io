@@ -38,7 +38,7 @@ h2 {
     padding-right: 10px;
 }
 
-/* h3 is a header for the main section of the .html files */
+/* h3 is a header for the main section of the index.html file */
 h3 {
     /* i set the text to be a readable size and considerably fit to be a header */
     font-size: 30px;
@@ -47,7 +47,17 @@ h3 {
     /* i set my color here, no background */
     color: #262424;
     /* and spacing attributes here */
-    margin-left: 65px;
+    margin-left: 70px;
+    width: fit-content;
+}
+
+/* h4 the exact replica of h3, but with slightly different margin spacing */
+h4 {
+    font-size: 30px;
+    font-family: 'Vollkorn', serif;
+    color: #262424;
+    /* instead of 70px, it's 3px to align with the .itembox <div> tags */
+    margin-left: 3px;
     width: fit-content;
 }
 

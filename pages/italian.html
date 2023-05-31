@@ -31,7 +31,7 @@
         <!--
             the <header> holds information and elements that can be seen in the topmost parts of the page
 
-            elements like the background image and header texts;
+            elements like the background image, header texts, and search bars;
             and information like the contents of the nav bar
         -->
         <header>
@@ -40,6 +40,10 @@
                 <div class="title">
                     <a class="home" href="/index.html"><h1>MunchNinja</h1></a>
                     <h2>Unleash your taste buds</h2>
+
+                    <div class="search">
+                        <input type="text" id="searchBar" placeholder="Hungry? Search Here!" onkeyup="search()">
+                    </div>
                 </div>
             </div>
             
@@ -63,7 +67,7 @@
                             <a href="../pages/chinese.html#chinabistro">China Bistro</a>
                             <a href="../pages/chinese.html#chinchin">Chin Chin</a>
                             <a href="../pages/chinese.html#mandarinoak">Mandarin Oak</a>
-                            <a href="../pages/chinese.html#pandaexpress">Mama Italia</a>
+                            <a href="../pages/chinese.html#pandaexpress">Panda Express</a>
                             <a href="../pages/chinese.html#yinyang">Yin & Yang</a>
                         </div>
                     </li>
@@ -76,7 +80,6 @@
                             <a href="../pages/italian.html#eataly">Eataly</a>
                             <a href="../pages/italian.html#oregano">Oregano</a>
                             <a href="../pages/italian.html#mamaitalia">Mama Italia</a>
-                            <a href="../pages/italian.html#littleitaly">Little Italy</a>
                         </div>
                     </li>
 
@@ -86,7 +89,6 @@
                         <div class="content">
                             <a href="../pages/mexican.html#mariabonita">Maria Bonita</a>
                             <a href="../pages/mexican.html#tacoeataco">Taco Eataco</a>
-                            <a href="../pages/mexican.html#oneeatery">One Eatery</a>
                             <a href="../pages/mexican.html#vamostacos">Vamos Tacos</a>
                             <a href="../pages/mexican.html#vmk">Vigilante Mexican Kitchen</a>
                         </div>
@@ -98,7 +100,6 @@
                         <div class="content">
                             <a href="../pages/cafe.html#starbucks">Starbucks</a>
                             <a href="../pages/cafe.html#timhortons">Tim Horton's</a>
-                            <a href="../pages/cafe.html#caffenero">Caffe Nero</a>
                             <a href="../pages/cafe.html#cariboucoffee">Caribou Coffee</a>
                             <a href="../pages/cafe.html#parka">Parka</a>
                         </div>
@@ -111,7 +112,6 @@
                             <a href="../pages/desserts.html#baskinrobbins">Baskin Robbins</a>
                             <a href="../pages/desserts.html#coldstone">Coldstone</a>
                             <a href="../pages/desserts.html#dunkindonuts">Dunkin' Donuts</a>
-                            <a href="../pages/desserts.html#krispykreme">Krispy Kreme</a>
                             <a href="../pages/desserts.html#cheesecakefactory">Cheesecake Factory</a>
                         </div>
                     </li>
@@ -122,745 +122,593 @@
         <!-- the <main> tag hold the main information the user will want to see -->
         <main class="maincolumns">
             <!--
-                there are <div> tags that contain different restaurant menus (.picks);
-                there are <div> tags that allow items to be scrolled (.itemscroll);
-                there are <div> tags that align the scrollable items horizontally (.rows);
+                there are <div> tags that contain different restaurant menus (.foodItems);
+                there are <div> tags that align .itembox elements rowed neatly (.foodrows);
                 there are <div> tags that contain all the elements of each food item (.itembox);
             -->
-            <div class="picks">
-                <h3>Top Picks for Italian Cuisine</h3>
-                <div class="itemscroll">
-                    <div class="rows">
-                        <div class="itembox">
-                            <img src="../images/fettuccinealfredo.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Fettuccine Alfredo</p>
-                                    <p class="description" class="description">Pasta · Il Forno</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 47.00</p>
-                                    <p class="description2">Halal<p>
-                                </div>
+
+            <div class="foodItems" id="ilforno">
+                <h4>Il Forno</h4>
+                <div class="foodrows">
+                    <div class="itembox">
+                        <img src="../images/quattroformaggi.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Quattro Formaggi</p>
+                                <p class="description" class="description">Pasta · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 39.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/gnocchifritti.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Gnocchi Fritti</p>
-                                    <p class="description">Pasta · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 29.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/fettuccinealfredo.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Fettuccine Alfredo</p>
+                                <p class="description" class="description">Pasta · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 47.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/fusilliallacoglio.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Fusilli Alla Coglio</p>
-                                    <p class="description">Pasta · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 63.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/chickenbarbeque.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Chicken Barbeque</p>
+                                <p class="description" class="description">Pizza · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 40.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/cannelloni.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Cannelloni</p>
-                                    <p class="description">Pasta · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 62.00</p>
-                                    <p class="description2">Halal · Vegetarian</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/spaghettipearlo.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Spaghetti Pearlo</p>
+                                <p class="description" class="description">Pasta · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 46.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/spaghettipearlo.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Spaghetti Pearlo</p>
-                                    <p class="description" class="description">Pasta · Il Forno</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 46.00</p>
-                                    <p class="description2">Halal<p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/queatrostaggioni.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Queatro Staggioini</p>
+                                <p class="description" class="description">Pizza(?) · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 43.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/calzone.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Calzone</p>
-                                    <p class="description">Pizza · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 79.00</p>
-                                    <p class="description2">Halal · Vegetarian</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/aranciniaiformaggi.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Arancini Ai Fromaggi</p>
+                                <p class="description" class="description">Fried · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 36.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/lasagnaalforno.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Lasagna Al Forno</p>
-                                    <p class="description">Pasta · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 57.75</p>
-                                    <p class="description2">Halal · Beef</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/spaghettisalsadiostriche.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Salsa Di Ostriche</p>
+                                <p class="description" class="description">Pasta · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 49.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/quattroformaggi.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Quattro Formaggi</p>
-                                    <p class="description" class="description">Pasta · Il Forno</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 39.00</p>
-                                    <p class="description2">Halal<p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/ceasarchicken.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Ceasar Chicken</p>
+                                <p class="description" class="description">Salad · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 34.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/rigatoniallarrabbiata.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Rigatoni Alla Arrabbiata</p>
-                                    <p class="description" class="description">Pasta · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 62.00</p>
-                                    <p class="description2">Halal · Vegan<p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/filettinidipollo.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Filettini Di Pollo</p>
+                                <p class="description" class="description">Fried · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 35.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/pestochicken.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Pesto Chicken</p>
-                                    <p class="description">Pasta · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 56.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/insalatadimista.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Insalata Di Mista</p>
+                                <p class="description" class="description">Salad · Il Forno</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 34.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="picks" id="ilforno">
-                <h3>Il Forno</h3>
-                    <div class="itemscroll">
-                        <div class="rows">
-                            <div class="itembox">
-                                <img src="../images/quattroformaggi.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Quattro Formaggi</p>
-                                        <p class="description" class="description">Pasta · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 39.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
+            <div class="foodItems" id="eataly">
+                <h4>Eataly</h4>
+                <div class="foodrows">
+                    <div class="itembox">
+                        <img src="../images/rigatoniallarrabbiata.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Rigatoni Alla Arrabbiata</p>
+                                <p class="description" class="description">Pasta · Eataly</p>
                             </div>
-    
-                            <div class="itembox">
-                                <img src="../images/fettuccinealfredo.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Fettuccine Alfredo</p>
-                                        <p class="description" class="description">Pasta · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 47.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="itembox">
-                                <img src="../images/chickenbarbeque.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Chicken Barbeque</p>
-                                        <p class="description" class="description">Pizza · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 40.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="itembox">
-                                <img src="../images/spaghettipearlo.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Spaghetti Pearlo</p>
-                                        <p class="description" class="description">Pasta · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 46.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="itembox">
-                                <img src="../images/queatrostaggioni.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Queatro Staggioini</p>
-                                        <p class="description" class="description">Pizza(?) · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 43.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="itembox">
-                                <img src="../images/aranciniaiformaggi.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Arancini Ai Fromaggi</p>
-                                        <p class="description" class="description">Fried · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 36.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="itembox">
-                                <img src="../images/spaghettisalsadiostriche.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Salsa Di Ostriche</p>
-                                        <p class="description" class="description">Pasta · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 49.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="itembox">
-                                <img src="../images/ceasarchicken.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Ceasar Chicken</p>
-                                        <p class="description" class="description">Salad · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 34.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="itembox">
-                                <img src="../images/filettinidipollo.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Filettini Di Pollo</p>
-                                        <p class="description" class="description">Fried · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 35.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="itembox">
-                                <img src="../images/insalatadimista.png" class="toppickimg">
-                                <div class="box">
-                                    <div class="leftside">
-                                        <p class="name">Insalata Di Mista</p>
-                                        <p class="description" class="description">Salad · Il Forno</p>
-                                    </div>
-                                    <div class="rightside">
-                                        <p class="cost">AED 34.00</p>
-                                        <p class="description2">Halal<p>
-                                    </div>
-                                </div>
+                            <div class="rightside">
+                                <p class="cost">AED 62.00</p>
+                                <p class="description2">Halal · Vegan<p>
                             </div>
                         </div>
                     </div>
-            </div>
 
-            <div class="picks" id="eataly">
-                <h3>Eataly</h3>
-                <div class="itemscroll">
-                    <div class="rows">
-                        <div class="itembox">
-                            <img src="../images/rigatoniallarrabbiata.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Rigatoni Alla Arrabbiata</p>
-                                    <p class="description" class="description">Pasta · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 62.00</p>
-                                    <p class="description2">Halal · Vegan<p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/salamipiccante.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Salami Piccante</p>
+                                <p class="description">Pizza · Eataly</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 72.00</p>
+                                <p class="description2">Haram · Seafood</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/salamipiccante.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Salami Piccante</p>
-                                    <p class="description">Pizza · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 72.00</p>
-                                    <p class="description2">Haram · Seafood</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/margheritaallapala.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Margherita Alla Pala</p>
+                                <p class="description">Alla Pala · Eataly</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 22.00</p>
+                                <p class="description2">Halal · Vegetarian</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/margheritaallapala.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Margherita Alla Pala</p>
-                                    <p class="description">Alla Pala · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 22.00</p>
-                                    <p class="description2">Halal · Vegetarian</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/bruschetta.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Bruschetta</p>
+                                <p class="description">Bread · Eataly</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 49.00</p>
+                                <p class="description2">Halal · Vegetarian</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/bruschetta.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Bruschetta</p>
-                                    <p class="description">Bread · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 49.00</p>
-                                    <p class="description2">Halal · Vegetarian</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/minestrone.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Minestrone</p>
+                                <p class="description">Soup · Eataly</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 49.00</p>
+                                <p class="description2">Halal · Vegan</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/minestrone.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Minestrone</p>
-                                    <p class="description">Soup · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 49.00</p>
-                                    <p class="description2">Halal · Vegan</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/frittodigamberi.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Fritto Di Gamberi</p>
+                                <p class="description">Fried · Eataly</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 59.00</p>
+                                <p class="description2">Halal · Seafood</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/frittodigamberi.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Fritto Di Gamberi</p>
-                                    <p class="description">Fried · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 59.00</p>
-                                    <p class="description2">Halal · Seafood</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/cannelloni.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Cannelloni</p>
+                                <p class="description">Pasta · Eataly</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 62.00</p>
+                                <p class="description2">Halal · Vegetarian</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/cannelloni.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Cannelloni</p>
-                                    <p class="description">Pasta · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 62.00</p>
-                                    <p class="description2">Halal · Vegetarian</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/lasagnaclassica.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Lasagna Classica</p>
+                                <p class="description">Pasta · Eataly</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 79.00</p>
+                                <p class="description2">Halal · Beef</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/lasagnaclassica.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Lasagna Classica</p>
-                                    <p class="description">Pasta · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 79.00</p>
-                                    <p class="description2">Halal · Beef</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/spaghettodieataly.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Spaghetto Di Eataly</p>
+                                <p class="description">Pasta · Eataly</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 64.00</p>
+                                <p class="description2">Halal · Vegan<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/spaghettodieataly.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Spaghetto Di Eataly</p>
-                                    <p class="description">Pasta · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 64.00</p>
-                                    <p class="description2">Halal · Vegan<p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/calzone.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Calzone</p>
+                                <p class="description">Pizza · Eataly</p>
                             </div>
-                        </div>
-
-                        <div class="itembox">
-                            <img src="../images/calzone.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Calzone</p>
-                                    <p class="description">Pizza · Eataly</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 79.00</p>
-                                    <p class="description2">Halal · Vegetarian</p>
-                                </div>
+                            <div class="rightside">
+                                <p class="cost">AED 79.00</p>
+                                <p class="description2">Halal · Vegetarian</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="picks" id="oregano">
-                <h3>Oregano</h3>
-                <div class="itemscroll">
-                    <div class="rows">
-                        <div class="itembox">
-                            <img src="../images/bruschettacontadina.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Bruschetta Contadina</p>
-                                    <p class="description" class="description">Bread · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 34.00</p>
-                                    <p class="description2">Halal<p>
-                                </div>
+            <div class="foodItems" id="oregano">
+                <h4>Oregano</h4>
+                <div class="foodrows">
+                    <div class="itembox">
+                        <img src="../images/bruschettacontadina.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Bruschetta Contadina</p>
+                                <p class="description" class="description">Bread · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 34.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/bruschettafunghi.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Bruschetta Funghi</p>
-                                    <p class="description">Bread · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 39.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/bruschettafunghi.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Bruschetta Funghi</p>
+                                <p class="description">Bread · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 39.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/gnocchifritti.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Gnocchi Fritti</p>
-                                    <p class="description">Pasta · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 29.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/gnocchifritti.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Gnocchi Fritti</p>
+                                <p class="description">Pasta · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 29.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/minestronesoup.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Minestrone</p>
-                                    <p class="description">Soup · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 27.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/minestronesoup.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Minestrone</p>
+                                <p class="description">Soup · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 27.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/burratasalad.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Burrata Salad</p>
-                                    <p class="description">Salad · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 53.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/burratasalad.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Burrata Salad</p>
+                                <p class="description">Salad · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 53.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/lasagnadicarne.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Lasagna Di Carne</p>
-                                    <p class="description">Pasta · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 59.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/lasagnadicarne.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Lasagna Di Carne</p>
+                                <p class="description">Pasta · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 59.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/pestochicken.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Pesto Chicken</p>
-                                    <p class="description">Pasta · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 56.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/pestochicken.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Pesto Chicken</p>
+                                <p class="description">Pasta · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 56.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/chickenparmigiana.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Chicken Parmigiana</p>
-                                    <p class="description">Pasta · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 58.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/chickenparmigiana.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Chicken Parmigiana</p>
+                                <p class="description">Pasta · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 58.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/spaghettibolognese.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Spaghetti Bolognese</p>
-                                    <p class="description">Pasta · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 49.00</p>
-                                    <p class="description2">Halal<p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/spaghettibolognese.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Spaghetti Bolognese</p>
+                                <p class="description">Pasta · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 49.00</p>
+                                <p class="description2">Halal<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/risottopollo.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Risotto Pollo</p>
-                                    <p class="description">Beef · Oregano</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 58.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/risottopollo.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Risotto Pollo</p>
+                                <p class="description">Beef · Oregano</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 58.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="picks" id="mamaitalia">
-                <h3>Mama Italia</h3>
-                <div class="itemscroll">
-                    <div class="rows">
-                        <div class="itembox">
-                            <img src="../images/bruschettaclassica.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Bruschetta Classica</p>
-                                    <p class="description" class="description">Bread · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 37.75</p>
-                                    <p class="description2">Halal · Vegetarian<p>
-                                </div>
+            <div class="foodItems" id="mamaitalia">
+                <h4>Mama Italia</h4>
+                <div class="foodrows">
+                    <div class="itembox">
+                        <img src="../images/bruschettaclassica.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Bruschetta Classica</p>
+                                <p class="description" class="description">Bread · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 37.75</p>
+                                <p class="description2">Halal · Vegetarian<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/pollopanini.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Pollo Panini</p>
-                                    <p class="description">Sandwich · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 47.25</p>
-                                    <p class="description2">Halal · Poultry</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/pollopanini.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Pollo Panini</p>
+                                <p class="description">Sandwich · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 47.25</p>
+                                <p class="description2">Halal · Poultry</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/lasagnaalforno.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Lasagna Al Forno</p>
-                                    <p class="description">Pasta · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 57.75</p>
-                                    <p class="description2">Halal · Beef</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/lasagnaalforno.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Lasagna Al Forno</p>
+                                <p class="description">Pasta · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 57.75</p>
+                                <p class="description2">Halal · Beef</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/fusilliallacoglio.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Fusilli Alla Coglio</p>
-                                    <p class="description">Pasta · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 63.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/fusilliallacoglio.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Fusilli Alla Coglio</p>
+                                <p class="description">Pasta · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 63.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/carnepizza.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Carne Pizza</p>
-                                    <p class="description">Pizza · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 67.50</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/carnepizza.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Carne Pizza</p>
+                                <p class="description">Pizza · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 67.50</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/calzonemargherita.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Calzone Margherita</p>
-                                    <p class="description">Pizza · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 57.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/calzonemargherita.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Calzone Margherita</p>
+                                <p class="description">Pizza · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 57.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/quattrostagioni.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Quattro Stagioni</p>
-                                    <p class="description">Pizza · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 63.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/quattrostagioni.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Quattro Stagioni</p>
+                                <p class="description">Pizza · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 63.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/napoletanapizza.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Napoletana Pizza</p>
-                                    <p class="description">Pizza · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 63.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/napoletanapizza.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Napoletana Pizza</p>
+                                <p class="description">Pizza · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 63.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/chickenpotstickers.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Salmon Pizza</p>
-                                    <p class="description">Pizza · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 71.00</p>
-                                    <p class="description2">Halal · Seafood<p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/chickenpotstickers.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Salmon Pizza</p>
+                                <p class="description">Pizza · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 71.00</p>
+                                <p class="description2">Halal · Seafood<p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="itembox">
-                            <img src="../images/margheritapizza.png" class="toppickimg">
-                            <div class="box">
-                                <div class="leftside">
-                                    <p class="name">Margherita Pizza</p>
-                                    <p class="description">Pizza · Mama Italia</p>
-                                </div>
-                                <div class="rightside">
-                                    <p class="cost">AED 57.00</p>
-                                    <p class="description2">Halal</p>
-                                </div>
+                    <div class="itembox">
+                        <img src="../images/margheritapizza.png" class="toppickimg">
+                        <div class="box">
+                            <div class="leftside">
+                                <p class="name">Margherita Pizza</p>
+                                <p class="description">Pizza · Mama Italia</p>
+                            </div>
+                            <div class="rightside">
+                                <p class="cost">AED 57.00</p>
+                                <p class="description2">Halal</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+
+        <!-- there is once again a <script> tag that acts as a bridge bwetween this file and my main.js file -->
+        <script src="../js/main.js"></script>
     </body>
 </html>

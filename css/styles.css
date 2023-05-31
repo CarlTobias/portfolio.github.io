@@ -44,6 +44,39 @@ main {
     top: 70%;
 }
 
+
+/* input is for the stylings and spacing of the search bar */
+input {
+    /* to align the bar with the title texts, i used these two atributes */
+    margin: 20px auto;
+    display: block;
+
+    /* i set  the border to solid and changed its color to match the webpage theme */
+    border-style: solid;
+    border-color: #736C56;
+    /* i also set appearance to none so that default browser styles cannot overwrite my .css */
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+
+    /* and here we have the physical stylings */
+    /* height and width were set to 25px and 500px (respectively) to make the search bar prominent without taking too much focus */
+    height: 25px;
+    width: 500px;
+    /* background color set to match the theme */
+    background-color: #BDB18C;
+    /* padding for inner-box space */
+    padding: 10px;
+    /* border radius to give roundness to the corners */
+    border-radius: 5px;
+    /* outline to none in order to remove any other default browser stylings */
+    outline: none;
+    /* and font-family to match the font with the page */
+    font-family: 'Poppins', sans-serif;
+}
+
 .headerimg {
     /* for this .class, i set user-select to none so that the image will not be touched; */
     user-select: none;
@@ -61,7 +94,8 @@ main {
 .maincolumns {
     /* for this .class, i set the display to flex and i justified content to center for alignment */
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
     /* i also set flex-wrap to wrap so that it doesn't continue in one long horizontal line */
     flex-wrap: wrap;
     /* added a margin for the bottom so there's some space to spare */
@@ -81,6 +115,26 @@ main {
     /* for .picks, i added margins to the top and bottom so that the elements arent crowded and there's an appropriate amount of space */
     margin-top: 30px;
     margin-bottom: 50px;
+}
+
+.foodrows {
+    /* similar to .rows, it's used to align .itembox <div> tags horizontally, but i made this wrap so all contents will stay on screen */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.foodItems {
+    /* these attributes help in aligning the various restaurant groups in each quisine  */
+    /* the first three here help in making the alignment lean to the left and into columns instead of rows */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* and the last attributes here help with the spacing of those groups in relation to each other */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-right: 50px;
 }
 
 .toppickimg {
